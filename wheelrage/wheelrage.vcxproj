@@ -160,12 +160,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Cell.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="EntityList.cpp" />
     <ClCompile Include="List.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MenuInitial.cpp" />
     <ClCompile Include="wheelrage.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cell.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="EntityList.h" />
     <ClInclude Include="List.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MenuInitial.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
