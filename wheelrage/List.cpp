@@ -1,21 +1,29 @@
 #include "List.h"
 
-template <class T> List<T>::List() {
+template <class T>
+List<T>::List() {
 	this->first = nullptr;
 	this->last = nullptr;
 	this->length = 0;
 }
 
-template <class T> int List<T>::size() {
+template <class T>
+bool isEmpty() {
+	return (this->first == nullptr);
+}
+
+template <class T>
+int List<T>::size() {
 	return this->length;
 }
 
-template <class T> void List<T>::push(T object) {
+template <class T>
+void List<T>::push(T object) {
 
 	Cell<T>* newCell = new Cell<T>();
 	newCell->setObject(object);
 
-	if (this->isEmpt()) {
+	if (this->isEmpty()) {
 
 		this->first = newCell;
 		this->last = newCell;
@@ -32,7 +40,8 @@ template <class T> void List<T>::push(T object) {
 
 }
 
-template <class T> T List<T>::get(int index) {
+template <class T>
+T List<T>::get(int index) {
 
 	if (index < 0 || index >= this->length) throw "Index provided is invalid.";
 
@@ -54,7 +63,8 @@ template <class T> T List<T>::get(int index) {
 
 }
 
-template <class T> void List<T>::remove(int index) {
+template <class T>
+void List<T>::remove(int index) {
 
 	if (index < 0 || index >= this->length) throw "Index provided is invalid.";
 

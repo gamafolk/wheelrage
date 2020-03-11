@@ -12,9 +12,7 @@ private:
 	Cell<T>* last;
 	int length;
 
-	bool isEmpt() {
-		return (this->first == nullptr);
-	}
+	bool isEmpty();
 
 public:
 

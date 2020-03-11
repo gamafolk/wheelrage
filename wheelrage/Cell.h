@@ -8,7 +8,7 @@ private:
 
 public:
 
-	Cell () { };
+	Cell ();
 	Cell (Cell<T>* next, Cell<T>* previous, T object);
 	void setNext(Cell<T>* next);
 	Cell<T>* getNext();
